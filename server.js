@@ -22,7 +22,7 @@ var socketIO = require("socket.io")(http);
 var socketID = "";
 var users = [];
 
-var mainURL = "http://localhost:3000";
+var mainURL = "http://localhost:27017";
 
 socketIO.on("connection", function (socket) {
 	console.log("User connected", socket.id);
