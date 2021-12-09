@@ -2,7 +2,7 @@ body {
 	font-family: Tahoma !important;
 }
 
-@charset "UTF-8";
+/*@charset "UTF-8"; */
 
 @font-face {
 	font-family: FontAwesome;
@@ -406,7 +406,7 @@ h5 {
 .col-md-7,
 .col-md-8,
 .col-md-9,
-.col-md-auto,{
+.col-md-auto{
 	position: relative;
 	width: 100%;
 	min-height: 1px;

@@ -22,17 +22,16 @@ var socketIO = require("socket.io")(http);
 var socketID = "";
 var users = [];
 
-var mainURL = "http://localhost:27017";
+var mainURL = "http://localhost:8080";
 
 socketIO.on("connection", function (socket) {
 	console.log("User connected", socket.id);
 	socketID = socket.id;
 });
 
-http.listen(3000, function () {
+http.listen(8080, function () {
 	console.log("Server started at " + mainURL);
 
-	const localhost = "mongodb://localhost:27017";
 	const mongoDBURL ='mongodb+srv://doadmin:s243nqt1O9086zvl@db-mongodb-nyc1-96357-f1f975ea.mongo.ondigitalocean.com/admin?authSource=admin&replicaSet=db-mongodb-nyc1-96357&tlsInsecure=true';
 	mongoClient.connect(mongoDBURL, function (error, client) {
 		var database = client.db("my_social_network");
