@@ -1,0 +1,1267 @@
+html,body{
+	font-family: "Muli", "Segoe Ui";
+}
+body {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #545454;
+}
+
+p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #8c8b8b;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    color: inherit;
+    outline: none;
+    -webkit-text-decoration: none;
+    -moz-text-decoration: none;
+    -ms-text-decoration: none;
+    -o-text-decoration: none;
+    text-decoration: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+.theme-layout {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+section {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+
+.gap {
+    float: left;
+    padding: 60px 0;
+    position: relative;
+    width: 100%;
+}
+
+.merged {
+    margin: 0px;
+    padding: 0;
+}
+
+.merged > div {
+    padding: 0;
+}
+
+.row.merged > div {
+    padding: 0;
+}
+
+.merged.row {
+    margin: 0;
+}
+
+.merged.row > div {
+    padding: 0;
+}
+
+.gray-bg {
+    float: left;
+    width: 100%;
+    background: #f4f2f2;
+}
+
+
+[type="submit"],
+button,
+html [type="button"] {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+.pdng0 {
+    padding: 0;
+}
+
+/* using login, signup*/
+.log-reg-area > h2 {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* using login, signup*/
+.login-reg-bg {
+	  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("banner.jpg");
+    /*old: background: #f4f7f6 none repeat scroll 0 0;*/
+    float: left;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+		background-color: red;
+}
+
+/* using login, signup*/
+.log-reg-area {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 35px #e2e2e2;
+    display: block;
+    float: none;
+    left: 50%;
+    padding: 35px 55px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 505px;
+}
+
+/* using signup*/
+.log-reg-area .checkbox label,
+.form-radio label {
+    color: #999;
+    font-size: 13px;
+}
+
+/* using index, login, signup*/
+.submit-btns {
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+}
+/* using signup*/
+.form-radio > .radio {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 20%;
+}
+/* using signup*/
+.form-radio {
+    margin: 0;
+}
+
+/* using updateprofile, login, signup */
+.form-group {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+/* using index, freinds, notifications, updateprofile, search, seeingothersprofile */
+/*--- this creates the top white section. ---*/
+.topbar {
+    background: #fff;
+    display: block;
+    height: 60px;
+    padding: 0 48px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    position: relative;
+		border-color: #088dcd;
+}
+
+/* using index, freinds, notifications, updateprofile, search, seeingothersprofile*/
+.logo {
+    display: inline-block;
+    vertical-align: inherit;
+    width: 15%;
+    position: relative;
+    z-index: 10;
+}
+
+
+.topbar > form {
+    display: inline-block;
+    vertical-align: sub;
+    width: 26%;
+    position: relative;
+}
+
+/* using index, freinds, notifications, updateprofile, search, seeingothersprofile*/
+.top-area {
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    width: 84%;
+}
+/* using index, freinds, notifications, updateprofile, search, seeingothersprofile*/
+.top-area > ul {
+    display: inline-block;
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding-left: 0;
+    vertical-align: middle;
+}
+/* using index, freinds, notifications, updateprofile, search, seeingothersprofile*/
+.top-area > ul > li {
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+    vertical-align: top;
+    z-index: 2;
+}
+/* using index, freinds, updateprofile, search, seeingothersprofile*/
+.top-area > ul > li > a {
+    color: #999;
+}
+
+/* using index, freinds , notifications, updateprofile, search, seeingothersprofile*/
+.form-search {
+    position: absolute;
+    right: -15px;
+    top: 42px;
+    width: 300px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* needed for search function */
+.searched.active .form-search {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* using index, friends, notifications, updateprofile, search, seeingothersprofile*/
+.form-search input {
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    color: #999999;
+    font-size: 15px;
+    padding: 9px 18px;
+    width: 100%;
+}
+/* using index, friends, notifications, updateprofile, search, seeingothersprofile*/
+.form-search button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #999;
+    position: absolute;
+    right: 5px;
+    top: 9px;
+}
+
+/* using updateprofile , seeingothersprofile*/
+.feature-photo .container-fluid {
+    padding: 0 43px;
+}
+
+/* using updateprofile, seeingothersprofile*/
+.feature-photo {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+/* using updateprofile, seeingothersprofile*/
+.feature-photo > figure {
+    margin-bottom: 0;
+}
+/* using updateprofile, seeingothersprofile*/
+.feature-photo > figure img {
+    display: inline-block;
+    width: 100%;
+}
+/* using updateprofile, seeingothersprofile*/
+.user-avatar {
+    border: 8px solid rgba(255, 255, 255, 0.8);
+    border-radius: 3px 25px 0;
+    box-shadow: 0 1px 0 #e1e8ed;
+    float: right;
+    margin-top: -168px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+/* using updateprofile, seeingothersprofile*/
+.user-avatar > figure > img {
+    width: 100%
+}
+/* using updateprofile, seeingothersprofile*/
+.user-avatar > figure {
+    margin-bottom: 0;
+    position: relative;
+}
+/* using updateprofile, search, seeingothersprofile*/
+.timeline-info {
+    background: #fff none repeat scroll 0 0;
+    display: block;
+    line-height: 59px;
+    width: 100%;
+}
+/* using updateprofile, search, seeingothersprofile*/
+.timeline-info > ul {
+    display: inline-block;
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding-left: 20px;
+    vertical-align: middle;
+    width: 100%;
+}
+/* using updateprofile, seeingothersprofile*/
+.timeline-info > ul li {
+    display: inline-block;
+    margin-right: 50px;
+    position: relative;
+}
+/* using search*/
+.timeline-info > ul li a {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 30px;
+    position: relative;
+    line-height: initial;
+    text-transform: capitalize;
+    padding-bottom: 3px;
+    font-weight: 400;
+}
+/* using search*/
+.timeline-info > ul li a:last-child {
+    margin-right: 0;
+}
+
+.timeline-info .admin-name > span {
+    bottom: 14px;
+    color: #3a3a3a;
+    font-size: 10px;
+    line-height: 5px;
+    position: absolute;
+    right: 0;
+}
+
+/* using updateprofile, seeingothersprofile*/
+.timeline-info .admin-name > h5 {
+    color: #088dcd;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0;
+    vertical-align: super;
+}
+/* using search*/
+.timeline-info > ul li a::before {
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.2s linear 0s;
+    visibility: hidden;
+    width: 0;
+		background: #a9058e
+}
+/* using search*/
+.timeline-info > ul li a::after {
+    border-bottom: 8px solid;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    bottom: -12px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    display: none;
+}
+/* using search*/
+.timeline-info > ul li a.active::after {
+    display: block;
+		color: #a9058e;
+}
+/* using search*/
+.timeline-info > ul li a:hover::before {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+		color: #a9058e;
+}
+/* using updateprofile*/
+.edit-phto {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    bottom: 100px;
+    color: #fff;
+    left: 275px;
+    padding: 5px 20px;
+    position: absolute;
+    z-index: 9;
+    border-radius: 3px;
+    border: 1px solid transparent;
+}
+
+.edit-phto:hover {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid;
+    color: #fff;
+		border-color: #088dcd;
+}
+/* using index, updateprofile*/
+.fileContainer {
+    color: #d8d8d8;
+    font-size: 11px;
+    margin: 0 0 0 5px;
+    position: relative;
+    text-transform: capitalize;
+}
+/* using index, updateprofile*/
+.fileContainer [type=file] {
+    cursor: pointer;
+    display: block;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    position: absolute;
+    right: 0px;
+    text-align: right;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+/* using updateprofile*/
+.edit-phto .fileContainer [type="file"] {
+    height: 35px;
+    top: -11px;
+    width: 126px;
+}
+/* using updateprofile*/
+.user-avatar .edit-phto {
+    border-radius: 0;
+    bottom: -40px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    transition: all 0.3s linear 0s;
+    padding: 5px;
+    text-align: center;
+}
+
+.user-avatar:hover .edit-phto {
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+		border-color: #088dcd;
+		background: #a9058e;
+}
+
+/*
+.dropdowns.active > a:hover {
+    background: #f1f1f1 none repeat scroll 0 0;
+}
+*/
+
+.add-btn {
+    bottom: 100px;
+    position: absolute;
+    right: 43px;
+}
+
+.add-btn > span {
+    color: #fff;
+    margin-right: 20px;
+    text-shadow: 0 2px 0 #4a4a4a;
+}
+
+.add-btn > a:hover {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid;
+		border-color: #088dcd;
+		color: #a9058e;
+}
+
+.add-btn > a {
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 4px 20px;
+    border: 1px solid transparent;
+		background: #a9058e;
+}
+
+/*--- sidebar widgets ---*/
+/* using  index, friends, notifications, updateprofile, seeingothersprofile*/
+.sidebar {
+    display: table;
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 80%;
+}
+/* using  index, friends, notifications, updateprofile, seeingothersprofile*/
+.sidebar .widget {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    background: #fdfdfd;
+    border: 1px solid #ede9e9;
+    border-radius: 3px;
+}
+/* using  index, friends, notifications, updateprofile, seeingothersprofile*/
+.sidebar .widget:last-child {
+    margin-bottom: 0;
+}
+/* using  index, friends, notifications, updateprofile, seeingothersprofile*/
+.sidebar .widget > ul {
+    display: inline-block;
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding: 0 25px 20px;
+    width: 100%;
+}
+/* using  index, friends, notifications, updateprofile, seeingothersprofile*/
+.sidebar .widget-title {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #424242;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding: 20px 20px 10px;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+}
+/* using  index, friends, notifications, updateprofile, seeingothersprofile*/
+.sidebar .widget-title::before {
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 20px;
+    position: absolute;
+    width: 20%;
+		background: #a9058e;
+}
+/* using  index, friends, notifications, updateprofile, seeingothersprofile*/
+.sidebar .widget li {
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+/* using  index, friends, notifications, updateprofile, seeingothersprofile*/
+.sidebar .widget li:last-child {
+    margin-bottom: 0;
+}
+/* using  index, friends, notifications, updateprofile, seeingothersprofile*/
+.sidebar .widget li i {
+    color: #999;
+    display: inline-block;
+    font-size: 11px;
+    margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+/* using  index, friends, notifications, updateprofile, seeingothersprofile*/
+.sidebar .widget li > a {
+    font-size: 15px;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    font-weight: 500;
+}
+
+.sidebar .widget li > a i {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    color: #fff;
+    font-size: 25px;
+}
+/* using  index, friends, notifications, updateprofile, seeingothersprofile*/
+.sidebar .widget ul.naves li i {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: baseline;
+}
+/* using  index, friends, notifications, updateprofile, search, seeingothersprofile*/
+.central-meta {
+    background: #fdfdfd none repeat scroll 0 0;
+    border: 1px solid #ede9e9;
+    border-radius: 3px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+/* using index*/
+.new-postbox {
+    display: inline-block;
+    width: 100%;
+}
+/* using index*/
+.new-postbox > figure {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: top;
+    width: 10.4%;
+}
+/* using index*/
+.newpst-input {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+    width: 85.5%;
+}
+/* using index*/
+.newpst-input > form {
+    display: inline-block;
+    width: 100%;
+}
+/* using index*/
+.newpst-input textarea {
+    float: left;
+    width: 100%;
+}
+/* using index*/
+.attachments {
+    border: 1px solid #eee;
+    display: block;
+    padding: 10px;
+    text-align: right;
+    border-top: 0;
+    background: #fff;
+}
+/* using index*/
+.attachments > ul {
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+/* using index*/
+.attachments li {
+    display: inline-block;
+    margin-left: 5px;
+}
+/* using index, updateprofile*/
+textarea {
+    border: 1px solid #eeeeee;
+    border-radius: 6px 6px 0 0;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 0;
+}
+/* using  index, friends, notifications, updateprofile, search, seeingothersprofile, login*/
+form button {
+    border: medium none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 10px;
+		background: #a9058e;
+}
+/* using index*/
+.attachments .fileContainer [type="file"] {
+    right: 6px;
+    top: -18px;
+    width: 20px;
+}
+/* using index*/
+.friend-info {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+/* using index*/
+.friend-info > figure {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    width: 8%;
+}
+/* using index*/
+.friend-name {
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: middle;
+    width: 90%;
+}
+/* using index*/
+.friend-name > ins {
+    float: left;
+    font-weight: 700;
+    width: 100%;
+    font-size: 18px;
+    text-decoration: none;
+		color: #a9058e;
+}
+/* using index*/
+.friend-name > span {
+    color: #999;
+    float: left;
+    font-size: 12px;
+    /*text-transform: capitalize;*/
+    width: 100%;
+}
+/* using index*/
+.post-meta {
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+}
+/* using index*/
+.post-meta > img {
+    float: left;
+    width: 100%;
+}
+/* using index*/
+.description {
+    float: left;
+    margin-top: 12px;
+    width: 100%;
+}
+/* using index*/
+.description > p {
+    margin-bottom: 20px;
+}
+
+.description > span {
+    color: #2a2a2a;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.description > p a {
+    font-weight: 600;
+		color: #a9058e;
+}
+
+/*-- sharing post area ----*/
+
+/* using index*/
+.we-video-info {
+    float: left;
+    padding: 15px 0 10px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+/* using index*/
+.we-video-info > ul {
+    float: left;
+    width: 100%;
+    line-height: 27px;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+/* using index*/
+.we-video-info > ul li {
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 40px;
+}
+/* using index*/
+.we-video-info > ul li span {
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 3px;
+    position: relative;
+}
+
+/* using index*/
+.we-video-info > ul li span ins {
+    font-size: 11px;
+    left: 20px;
+    position: absolute;
+    text-decoration: none;
+    top: -10px;
+}
+/* using index*/
+.we-video-info > ul li span.none {
+    color: black;
+    cursor: pointer;
+}
+/* using index*/
+.we-video-info > ul li span.like {
+    color: green;
+    cursor: pointer;
+    transition: all 0.2s linear 0s;
+}
+/* using index*/
+.we-video-info > ul li span.like:hover .we-video-info > ul li span.dislike:hover {
+    trnsform: scale(1.1);
+}
+
+/*--- comment area ---*/
+/* using index*/
+.coment-area {
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+}
+/* using index*/
+.we-comet {
+    float: left;
+    width: 100%;
+    padding-left: 0;
+    list-style: none;
+}
+/* using index*/
+.we-comet > li {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+/* using index*/
+.we-comet > li:last-child {
+    margin-bottom: 0;
+}
+/* using index*/
+.comet-avatar {
+    display: table-cell;
+    max-width: 7.6%;
+    vertical-align: top;
+    width: 7.6%;
+}
+/* using index*/
+.we-comment {
+    border: 1px solid #ede9e9;
+    display: table-cell;
+    margin-left: 20px;
+    padding: 10px;
+    vertical-align: top;
+    position: relative;
+    width: 65%;
+}
+
+/* using index*/
+.we-comment::before,
+.peoples-mesg-box > ul > li p:before {
+    border-bottom: 10px solid transparent;
+    border-right: 11px solid #ede9e9;
+    border-top: 10px solid transparent;
+    left: -11px;
+    top: 10px;
+    position: absolute;
+    content: '';
+}
+/* using index*/
+.we-comment::after,
+.peoples-mesg-box > ul > li p:after {
+    border-bottom: 8px solid transparent;
+    border-right: 9px solid #fff;
+    border-top: 8px solid transparent;
+    left: -9px;
+    top: 12px;
+    position: absolute;
+    content: '';
+}
+/* using index*/
+.we-comet > li ul {
+    margin-left: 55px;
+    margin-top: 20px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.we-comet > li ul li {
+    margin-bottom: 20px;
+}
+
+.we-comet > li ul li:last-child {
+    margin-bottom: 0;
+}
+/* using index*/
+.coment-head {
+    display: inline-block;
+    width: 100%;
+}
+/* using index*/
+.coment-head > h5 {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-bottom: 0;
+    color: #2a2a2a;
+}
+/* using index*/
+.we-comment > p {
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 0;
+    max-width: 100%;
+    margin-top: 5px;
+}
+/* using index*/
+.we-reply {
+    text-transform: capitalize;
+    font-size: 13px;
+    display: inline-block;
+    margin-left: 10px;
+}
+/* using index*/
+.coment-head > span {
+    color: #999;
+    font-size: 12px;
+    padding-left: 10px;
+    display: inline-block;
+}
+/* using index*/
+li.post-comment .comet-avatar {
+    display: inline-block;
+    max-width: 6%;
+    vertical-align: top;
+    width: 6%;
+}
+/* using index*/
+.post-comt-box {
+    display: inline-block;
+    padding-left: 15px;
+    position: relative;
+    width: 93%;
+}
+/* using index*/
+.post-comt-box form textarea {
+    background: #f3f3f3 none repeat scroll 0 0;
+    border-color: transparent;
+    border-radius: 3px;
+    color: #000000;
+    font-size: 13.5px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 16px;
+}
+/* using index*/
+.post-comt-box form button {
+    bottom: 23px;
+    position: absolute;
+    right: 0;*/
+    /*background: none;*/
+}
+
+/*--- search friend widget ---*/
+/* using  index, friends, notifications, updateprofile, seeingothersprofile*/
+.widget {
+    float: left;
+    width: 100%;
+}
+
+.widget > a {
+    display: inline-block;
+    margin-bottom: 32px;
+}
+/* using  index, friends, notifications, updateprofile, seeingothersprofile*/
+.widget-title {
+    float: left;
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+footer .widget-title h4 {
+    color: #424242;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+footer .widget-title h4::before {
+    bottom: -6px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 20%;
+		background: #a9058e;
+}
+
+footer .widget-title {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+
+.widget .list-style {
+    list-style: outside none none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+/* using  index, friends, notifications, updateprofile, search, seeingothersprofile, login, signup*/
+.theme-layout::before {
+    background: url(../img/dot-pattern.png);
+    background-repeat: repeat;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.5s linear 0s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/*-- widgets ---*/
+
+.sidebar .widget ul.recent-photos li {
+    margin-bottom: 5px;
+    width: 31.8%;
+}
+
+.widget ul.recent-photos {
+    display: inline-block;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+/* using friends, search */
+.nearby-contct {
+    display: inline-block;
+    list-style: outside none none;
+    margin-bottom: 0;
+    margin-top: 35px;
+    padding-left: 0;
+    width: 100%;
+}
+
+/* using friends, search */
+.nearby-contct > li {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #eaf1f6;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    transition: all 0.15s linear 0s;
+}
+
+/* using friends, search */
+.nearby-contct > li:last-child {
+    margin-bottom: 0;
+}
+
+.nearby-contct > li:hover {
+    box-shadow: 0 8px 8px #e1e8ec;
+    border-color: transparent;
+}
+/* using friends, search */
+.nearly-pepls {
+    display: inline-block;
+    width: 100%;
+}
+/* using friends, search */
+.nearly-pepls > figure {
+    display: inline-block;
+    margin-bottom: 0;
+    max-width: 60px;
+    min-width: 60px;
+    vertical-align: middle;
+    width: 60px;
+}
+/* using friends, search */
+.pepl-info {
+    display: inline-block;
+    padding-left: 15px;
+    position: relative;
+    vertical-align: middle;
+    width: 88%;
+}
+/* using friends, search */
+.pepl-info > h4 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+/* using friends, search */
+a.add-butn {
+    color: #fff;
+    float: right;
+    font-size: 13px;
+    line-height: initial;
+    padding: 5px 10px;
+    position: absolute;
+    right: 0;
+    text-transform: capitalize;
+    top: 10px;
+		background: #a9058e;
+}
+
+.pepl-info > span {
+    float: left;
+    font-size: 13px;
+    text-transform: capitalize;
+    width: 100%;
+    line-height: initial;
+		color: #a9058e;
+}
+
+/* using search*/
+.nav.nav-tabs {
+    border: medium none;
+}
+
+/* using friends, search */
+.frnds {
+    float: left;
+    width: 100%;
+}
+
+.frnds .nav-tabs .nav-item {
+    margin-right: 50px;
+}
+
+.frnds .nav-tabs .nav-item:last-child {
+    margin-right: 0;
+}
+
+/* using friends, search */
+a.add-butn.btn-unfriend {
+    background: lightslategray none repeat scroll 0 0;
+}
+a.add-butn.more-action {
+    /*background: lightslategray none repeat scroll 0 0;*/
+    right: 74px;
+}
+
+#frends a.add-butn.more-action {
+    right: 89px;
+		/*background: #a9058e;*/
+}
+/*needed*/
+.nav-tabs--vertical {
+    border-bottom: none;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/*needed*/
+.d-flex .tab-content {
+    background: #f7f7f7 none repeat scroll 0 0;
+    display: inline-block;
+    width: 100%;
+}
+/* using notifications , updateprofile, seeingothersprofile*/
+.f-title {
+    font-size: 17.5px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+/* using notifications, updateprofile, seeingothersprofile*/
+.f-title::before {
+    bottom: 8px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+		background: #a9058e;
+}
+/* using notifications, updateprofile, seeingothersprofile*/
+.f-title i {
+    font-size: 14px;
+    margin-right: 5px;
+		color: #a9058e;
+}
+
+/*--- edit basic info page ---*/
+
+/* using updateprofile*/
+.editing-info > form {
+    margin-top: 25px;
+}
+
+/* using notifications*/
+.notification-box > ul {
+    display: inline-block;
+    list-style: outside none none;
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding-left: 0;
+    width: 100%;
+}
+/* using notifications*/
+.notification-box {
+    display: inline-block;
+    width: 100%;
+}
+/* using notifications*/
+.notification-box > ul > li {
+    border-bottom: 1px solid #e1e8ed;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+/* using notifications*/
+.notification-box > ul li figure {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 10px;
+    max-width: 45px;
+    min-width: 45px;
+    vertical-align: top;
+}
+
+/* using notifications*/
+.notifi-meta {
+    display: inline-block;
+    line-height: initial;
+    vertical-align: middle;
+    width: 86%;
+}
+/* using notifications*/
+.notifi-meta > p {
+    font-size: 15px;
+    margin-bottom: 0;*/
+    /*text-transform: capitalize;*/
+    color: #3a3a3a;
+}
+/* using notifications*/
+.notifi-meta > span {
+    color: #999;
+    font-size: 12px;
+}
+/* using notifications*/
+.notification-box > ul > li:last-child {
+    border-bottom: 0 none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* using index, friends, notifications, updateprofile, search , seeingothersprofile*/
+#page-contents {
+    position: relative;
+}
+/* using index, friends, notifications, updateprofile, seeingothersprofile*/
+.static,
+.static > div {
+    position: static !important;
+}
+/* using signup*/
+.checkbox label,
+.form-radio label {
+    color: #676767;
+}
