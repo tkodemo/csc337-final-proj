@@ -22,7 +22,7 @@ var socketIO = require("socket.io")(http);
 var socketID = "";
 var users = [];
 
-var mainURL = "csc-337-final-proj-jbbzr.ondigitalocean.app";
+var mainURL = "http://csc337-final-proj:8080";
 var localhost = "http://localhost:8080";
 
 socketIO.on("connection", function (socket) {
