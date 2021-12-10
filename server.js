@@ -22,8 +22,8 @@ var socketIO = require("socket.io")(http);
 var socketID = "";
 var users = [];
 
-var mainURL = "http://csc337_final_proj:8080";
-var localhost = "http://localhost:8080";
+//var mainURL = "http://csc337_final_proj:8080";
+var mainURL = "http://localhost:8080";
 
 socketIO.on("connection", function (socket) {
 	console.log("User connected", socket.id);
